@@ -91,7 +91,7 @@
         //Display 'Failed to call FHIR Service' if extractData failed
         function(errArgs) {
           $('#loading').hide();
-          $('#errors').html('<p> iCare app failed to call FHIR Service:'  + errArgs + '</p>');
+          $('#errors').html('<p> iCare app failed to call FHIR Service:'  + JSON.stringify(errArgs) + '</p>');
         }
       );
     </script>
