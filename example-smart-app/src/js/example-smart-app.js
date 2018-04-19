@@ -4,7 +4,7 @@
 
     function onError() {
       console.log('Loading error', arguments);
-      ret.reject();
+      ret.reject(arguments);
     }
 
     function onReady(smart)  {
